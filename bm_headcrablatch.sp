@@ -47,13 +47,28 @@ public void OnPluginStart()
 
 public OnMapStart()
 {
+	// Downloads table for servers
+	AddFileToDownloadsTable("materials/dev/hc_blur.vmt");
+	AddFileToDownloadsTable("materials/dev/hc_blur.vtf");
+	AddFileToDownloadsTable("sound/weapons/headcrab/latch_attack2.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/latch_attack3.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/latch_pain3.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/latch1.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/latch2.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/body_medium_impact_hard1.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/body_medium_impact_hard2.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/body_medium_impact_hard3.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/body_medium_impact_hard4.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/body_medium_impact_hard5.wav");
+	AddFileToDownloadsTable("sound/weapons/headcrab/body_medium_impact_hard6.wav");
+
 	// Fix the headcrab texture no longer being preloaded in BM: Definitive
 	PrecacheDecal("dev/hc_blur", true);
 
 	// Precache our new sounds
-	PrecacheSound("weapons/headcrab/latch_attack2", true);
-	PrecacheSound("weapons/headcrab/latch_attack3", true);
-	PrecacheSound("weapons/headcrab/latch_pain3", true);
+	PrecacheSound("weapons/headcrab/latch_attack2.wav", true);
+	PrecacheSound("weapons/headcrab/latch_attack3.wav", true);
+	PrecacheSound("weapons/headcrab/latch_pain3.wav", true);
 	PrecacheSound("weapons/headcrab/latch1.wav", true);
 	PrecacheSound("weapons/headcrab/latch2.wav", true);
 	PrecacheSound("weapons/headcrab/body_medium_impact_hard1.wav", true);
